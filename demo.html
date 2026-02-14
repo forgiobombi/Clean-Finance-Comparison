@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Finance Snapshot - Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Clean Finance Snapshot</h1>
+            <p class="subtitle">Demo with Mock Data - See Animations in Action!</p>
+        </header>
+
+        <div class="country-selector">
+            <div class="selector-group">
+                <label for="country1-demo">Country 1</label>
+                <select id="country1-demo">
+                    <option value="">Select a country...</option>
+                    <option value="us" selected>United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="jp">Japan</option>
+                </select>
+            </div>
+            <div class="vs-divider">VS</div>
+            <div class="selector-group">
+                <label for="country2-demo">Country 2</label>
+                <select id="country2-demo">
+                    <option value="">Select a country...</option>
+                    <option value="us">United States</option>
+                    <option value="uk" selected>United Kingdom</option>
+                    <option value="jp">Japan</option>
+                </select>
+            </div>
+        </div>
+
+        <button id="compareBtnDemo" class="compare-btn">Compare Countries (Demo)</button>
+
+        <div id="comparisonResultsDemo" class="comparison-results show">
+            <div class="country-card" id="card1-demo">
+                <h2 class="country-name">United States</h2>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Currency</div>
+                    <div class="metric-value">USD</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">Exchange Rate</div>
+                    <div class="metric-value" id="exchangeRate1-demo">1.0000</div>
+                    <div class="metric-unit">to USD</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">GDP</div>
+                    <div class="metric-value" id="gdp1-demo">25,462,700,000,000</div>
+                    <div class="metric-unit">USD</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">Inflation</div>
+                    <div class="metric-value" id="inflation1-demo">4.12</div>
+                    <div class="metric-unit">% annual</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">Population</div>
+                    <div class="metric-value" id="population1-demo">331,893,745</div>
+                    <div class="metric-unit">people</div>
+                </div>
+            </div>
+
+            <div class="country-card" id="card2-demo">
+                <h2 class="country-name">United Kingdom</h2>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Currency</div>
+                    <div class="metric-value">GBP</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">Exchange Rate</div>
+                    <div class="metric-value" id="exchangeRate2-demo">1.2678</div>
+                    <div class="metric-unit">to USD</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">GDP</div>
+                    <div class="metric-value" id="gdp2-demo">3,070,668,000,000</div>
+                    <div class="metric-unit">USD</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">Inflation</div>
+                    <div class="metric-value" id="inflation2-demo">7.92</div>
+                    <div class="metric-unit">% annual</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">Population</div>
+                    <div class="metric-value" id="population2-demo">67,026,292</div>
+                    <div class="metric-unit">people</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="demo.js"></script>
+</body>
+</html>

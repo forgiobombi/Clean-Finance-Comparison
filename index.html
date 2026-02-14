@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Finance Snapshot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Clean Finance Snapshot</h1>
+            <p class="subtitle">Compare financial and economic indicators between countries</p>
+        </header>
+
+        <div class="country-selector">
+            <div class="selector-group">
+                <label for="country1">Country 1</label>
+                <select id="country1">
+                    <option value="">Select a country...</option>
+                </select>
+            </div>
+            <div class="vs-divider">VS</div>
+            <div class="selector-group">
+                <label for="country2">Country 2</label>
+                <select id="country2">
+                    <option value="">Select a country...</option>
+                </select>
+            </div>
+        </div>
+
+        <button id="compareBtn" class="compare-btn">Compare Countries</button>
+
+        <div id="errorMessage" class="error-message"></div>
+        <div id="loadingSpinner" class="loading-spinner"></div>
+
+        <div id="comparisonResults" class="comparison-results">
+            <div class="country-card" id="card1">
+                <h2 class="country-name" id="countryName1"></h2>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Currency</div>
+                    <div class="metric-value" id="currency1"></div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">Exchange Rate</div>
+                    <div class="metric-value" id="exchangeRate1"></div>
+                    <div class="metric-unit">to USD</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">GDP</div>
+                    <div class="metric-value" id="gdp1"></div>
+                    <div class="metric-unit">USD</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">Inflation</div>
+                    <div class="metric-value" id="inflation1"></div>
+                    <div class="metric-unit">% annual</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">Population</div>
+                    <div class="metric-value" id="population1"></div>
+                    <div class="metric-unit">people</div>
+                </div>
+            </div>
+
+            <div class="country-card" id="card2">
+                <h2 class="country-name" id="countryName2"></h2>
+                
+                <div class="metric-card">
+                    <div class="metric-label">Currency</div>
+                    <div class="metric-value" id="currency2"></div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">Exchange Rate</div>
+                    <div class="metric-value" id="exchangeRate2"></div>
+                    <div class="metric-unit">to USD</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">GDP</div>
+                    <div class="metric-value" id="gdp2"></div>
+                    <div class="metric-unit">USD</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">Inflation</div>
+                    <div class="metric-value" id="inflation2"></div>
+                    <div class="metric-unit">% annual</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">Population</div>
+                    <div class="metric-value" id="population2"></div>
+                    <div class="metric-unit">people</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
