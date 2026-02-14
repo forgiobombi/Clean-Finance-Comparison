@@ -1,0 +1,21 @@
+{
+  "name": "clean-finance-comparison",
+  "version": "1.0.0",
+  "description": "Compare financial and economic indicators between countries",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -o"
+  },
+  "keywords": [
+    "finance",
+    "comparison",
+    "currency",
+    "gdp",
+    "inflation",
+    "world-bank",
+    "frankfurter"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {}
+}
