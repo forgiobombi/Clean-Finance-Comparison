@@ -22,6 +22,10 @@ A beautiful, Apple-style web application for comparing financial and economic in
 
 ## How to Use
 
+### Quick Demo
+
+Want to see it in action immediately with mock data? Open `demo.html` in your browser to see the animations and UI without API calls.
+
 ### Option 1: Open Locally
 
 Simply open `index.html` in your web browser. No build process or server required!
